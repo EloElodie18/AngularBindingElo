@@ -1,0 +1,22 @@
+<div>
+  Filter By :
+
+  <div class="inline-block">
+    <label for="title-name">
+      <input type="radio" id="title-name" name="radio-filter" value="title" (change)="jaiCliqueSurUnFiltre($event)"/>
+      <span class="label-body"> Title </span>
+    </label>
+  </div>
+  <div class="inline-block">
+    <label for="first-name">
+      <input type="radio" id="first-name" name="radio-filter" value="first" (change)="jaiCliqueSurUnFiltre($event)"/>
+      <span class="label-body"> Name </span>
+    </label>
+  </div>
+  <div class="inline-block">
+    <label for="last-name">
+      <input type="radio" id="last-name" name="radio-filter" value="last" (change)="jaiCliqueSurUnFiltre($event)"/>
+      <span class="label-body"> Last Name </span>
+    </label>
+  </div>
+</div>
