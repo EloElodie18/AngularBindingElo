@@ -21,14 +21,15 @@ export class AppComponent implements OnInit {
     this.usersToDisplay = [...this.usersEnDur]; //tableau qu'on écrase jamais
   }
 
-  afficherTexteDeInputRecuDeEnfant() { //content = recherche émise
+  afficherTexteDeInputRecuDeEnfant() { //content = recherche émise, lors de l'étape 2 du TP
     console.log("Parent: ", this.sauvegardeTexteSaisie);
     this.usersToDisplay = this.usersEnDur.filter((banane) =>
-      banane.name[this.sauvegardeFiltre].toLowerCase().includes(this.sauvegardeTexteSaisie.toLowerCase())
+      banane.name[this.sauvegardeFiltre].toLowerCase().includes(this.sauvegardeTexteSaisie.toLowerCase()) //on utilise l'annotation [] pr que ce soit dynamique, evitant ainsi de noter title, first ou last.
     );
   }
 
-  onSearch (valeurSaisie : string) {//garde la saisie de texte et fait appel à la methode
+  onSearch (valeurSaisie : string) {//garde la saisie de texte et fait appel à la methode, 
+    //je peux le tester en console.log, dc qd je clis, ds ma cosole ça me l'affiche
     this.sauvegardeTexteSaisie = valeurSaisie;
     this.afficherTexteDeInputRecuDeEnfant();
   }

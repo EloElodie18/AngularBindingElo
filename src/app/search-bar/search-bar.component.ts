@@ -6,7 +6,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./search-bar.component.css'],
 })
 export class SearchBarComponent implements OnInit {
-  @Output() jeSaisie = new EventEmitter<string>(); //creation bouche
+  @Output() jeSaisie = new EventEmitter<string>(); //creation bouche, en string car les valeurs données dans le html étaient des string (value='title' par exemple)
   input: any;
   constructor() {}
 

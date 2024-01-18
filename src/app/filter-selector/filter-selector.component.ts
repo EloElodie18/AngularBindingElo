@@ -6,7 +6,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./filter-selector.component.css'],
 })
 export class FilterSelectorComponent implements OnInit {
-  @Output() boucheJeClicUnFiltre = new EventEmitter();
+  @Output() boucheJeClicUnFiltre = new EventEmitter<string>();
   constructor() {}
 
   ngOnInit() {}
