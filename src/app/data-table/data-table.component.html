@@ -12,7 +12,7 @@
   
   <tbody *ngIf="dataUser.length > 0"> <!--que me dit ce if? sur tte la longueur du tableau, si 1ere donnée est possible, alors affiche tt ton paragraphe-->
     
-    <tr *ngFor="let banane of dataUser">
+    <tr *ngFor="let banane of dataUser"> <!--pr chq i de dataUser, affiche l'info demandée-->
       <td>{{ banane.name.title }}</td>
       <td>{{ banane.name.first }}</td>
       <td>{{ banane.name.last }}</td>

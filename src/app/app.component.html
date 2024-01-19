@@ -3,7 +3,7 @@
 
   <h2>Mini App</h2>
 
-  <app-search-bar (jeSaisie)="onSearch($event)"></app-search-bar>
+  <app-search-bar (jeSaisie)="onSearch($event)"></app-search-bar> <!--ce qu'il y a derriere le = lui appartient forcement!!!-->
   <app-filter-selector (boucheJeClicUnFiltre)="onSelector($event)"> </app-filter-selector>
   <app-data-table [dataUser]="usersToDisplay"></app-data-table> <!--je dois y mettre qqch qui est déclaré ds enfant, soit le [dataUser]-->
 </div>
